@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Ui Plug-in
+Bundle-SymbolicName: com.seb.chess.ui;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: com.seb.chess.ui.ChessPlugin
+Bundle-Vendor: SEB
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.ui.console,
+ org.eclipse.core.resources,
+ org.eclipse.ui.ide,
+ org.eclipse.ui.views
+Eclipse-LazyStart: true
+Export-Package: com.seb.chess.ui
+Bundle-ClassPath: lib/chess-core.jar,
+ .
