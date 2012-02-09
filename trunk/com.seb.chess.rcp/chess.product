@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.1"?>
+
+<product name="Seb Chess Application" id="com.seb.chess.rcp.product" application="com.seb.chess.rcp.application" useFeatures="false">
+
+   <configIni use="default"/>
+
+   <launcherArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="/com.seb.chess.rcp/icons/main_16.gif" i32="/com.seb.chess.rcp/icons/main_32.gif" i48="/com.seb.chess.rcp/icons/main_48.gif"/>
+
+   <launcher name="seb_chess">
+      <solaris/>
+      <win useIco="false">
+         <bmp
+            winSmallHigh="/com.seb.chess.rcp/icons/main_16_32bits.bmp"
+            winSmallLow="/com.seb.chess.rcp/icons/main_16_8bits.bmp"
+            winMediumHigh="/com.seb.chess.rcp/icons/main_32_32bits.bmp"
+            winMediumLow="/com.seb.chess.rcp/icons/main_32_8bits.bmp"
+            winLargeHigh="/com.seb.chess.rcp/icons/main_48_32bits.bmp"
+            winLargeLow="/com.seb.chess.rcp/icons/main_48_8bits.bmp"/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <plugins>
+      <plugin id="com.ibm.icu"/>
+      <plugin id="com.seb.chess.core"/>
+      <plugin id="com.seb.chess.rcp"/>
+      <plugin id="com.seb.chess.ui"/>
+      <plugin id="org.eclipse.core.commands"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.databinding"/>
+      <plugin id="org.eclipse.core.expressions"/>
+      <plugin id="org.eclipse.core.filesystem"/>
+      <plugin id="org.eclipse.core.filesystem.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.core.runtime.compatibility.registry" fragment="true"/>
+      <plugin id="org.eclipse.core.variables"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.help"/>
+      <plugin id="org.eclipse.jface"/>
+      <plugin id="org.eclipse.jface.databinding"/>
+      <plugin id="org.eclipse.jface.text"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.swt"/>
+      <plugin id="org.eclipse.swt.win32.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.text"/>
+      <plugin id="org.eclipse.ui"/>
+      <plugin id="org.eclipse.ui.console"/>
+      <plugin id="org.eclipse.ui.workbench"/>
+      <plugin id="org.eclipse.ui.workbench.texteditor"/>
+   </plugins>
+
+</product>

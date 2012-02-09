@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Seb Chess RCP
+Bundle-SymbolicName: com.seb.chess.rcp; singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: com.seb.chess.rcp.Activator
+Bundle-Vendor: SEB
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.seb.chess.ui
+Eclipse-LazyStart: true
