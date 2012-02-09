@@ -1,0 +1,12 @@
+
+<project name="Create Jar file" default="create-jar">
+
+<!-- ================================= 
+          target: create-jar              
+         ================================= -->
+    <target name="create-jar" description="--> Create jar files in lib">
+		<jar destfile="lib/chess-applet.jar" basedir="bin"></jar>
+    	<copy file="lib/chess-core.jar" todir="web"/>
+    	<copy file="lib/chess-applet.jar" todir="web"/>
+    </target>
+</project>
