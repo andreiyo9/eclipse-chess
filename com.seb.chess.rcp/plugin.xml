@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.seb.chess.rcp.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="com.seb.chess.rcp.application"
+            name="Seb Chess Application">
+         <property
+               name="windowImages"
+               value="icons/main_16.gif,icons/main_32.gif,icons/main_48.gif">
+         </property>
+         <property
+               name="appName"
+               value="Seb Chess Application">
+         </property>
+      </product>
+   </extension>
+
+</plugin>
