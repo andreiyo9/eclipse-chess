@@ -1,0 +1,10 @@
+
+<project name="Import chess core jar file" default="import-jar">
+
+<!-- ================================= 
+          target: create-jar              
+         ================================= -->
+    <target name="import-jar" description="--> Import chess core jar file">
+		<copy file="../chess-core/lib/chess-core.jar" todir="lib"></copy>
+	</target>
+</project>
